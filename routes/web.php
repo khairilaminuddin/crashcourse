@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/', [CatController::class, 'index']);
+Route::delete('/cats/{cat}', [CatController::class, 'destroy'])->name('cats.destroy');
